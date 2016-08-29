@@ -19,6 +19,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:inputType="text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
@@ -37,6 +38,7 @@
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:inputType="text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
@@ -48,7 +50,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="loginx"
+        android:text="@string/str_loginx"
         android:id="@+id/button"
         android:layout_below="@+id/editText2"
         android:layout_alignParentLeft="true"
@@ -57,7 +59,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="loginj"
+        android:text="@string/str_loginj"
         android:id="@+id/button2"
         android:layout_alignTop="@+id/button"
         android:layout_toRightOf="@+id/button"
@@ -66,7 +68,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="logout"
+        android:text="@string/str_logout"
         android:id="@+id/button3"
         android:layout_alignTop="@+id/button2"
         android:layout_toRightOf="@+id/button2"
