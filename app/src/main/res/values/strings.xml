@@ -3,4 +3,5 @@
     <string name="str_loginx">loginx</string>
     <string name="str_loginj">loginj</string>
     <string name="str_logout">logout</string>
+    <string name="str_id">ID</string>
 </resources>
