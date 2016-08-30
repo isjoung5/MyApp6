@@ -20,8 +20,9 @@ public class MainActivity extends AppCompatActivity implements Button.OnClickLis
         editText=(EditText)findViewById(R.id.editText);
         editText2=(EditText)findViewById(R.id.editText2);
 
-        Button button = (Button) findViewById(R.id.button) ;
-        button.setOnClickListener(this) ;
+
+
+
         Button button2 = (Button) findViewById(R.id.button2) ;
         button2.setOnClickListener(this) ;
         Button button3 = (Button) findViewById(R.id.button3) ;
@@ -35,9 +36,20 @@ public class MainActivity extends AppCompatActivity implements Button.OnClickLis
 
         editText.setText("manager");
         editText2.setText("netkara");
+
+        Button button = (Button) findViewById(R.id.button) ;
+        //button.setOnClickListener(this) ;
+        button.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText editText1 = (EditText)findViewById(R.id.editText);
+
+                editText1.setText("Test");
+            }
+        });
     }
 
-    private final long	FINSH_INTERVAL_TIME    = 1000;
+    private final long	FINSH_INTERVAL_TIME    = 2000;
     private long		backPressedTime        = 0;
 
     @Override
